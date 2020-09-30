@@ -1,0 +1,1 @@
+{"version":3,"sources":["script.js"],"names":["name","func","console","log"],"mappings":";;AAAA,IAAIA,IAAI,uBAAR;;AAEA,IAAIC,IAAI,GAAG,SAAPA,IAAO,GAAM;AAChBC,EAAAA,OAAO,CAACC,GAAR,CAAY,GAAZ;AACA,CAFD","sourcesContent":["let name = `Имя`;\r\n\r\nlet func = () => {\r\n\tconsole.log(123);\r\n};"],"file":"script.js"}

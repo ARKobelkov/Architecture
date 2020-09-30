@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "ArialMT";
+  src: url("../fonts/arialmt/arialmt-regular.woff") format("woff"), url("../fonts/arialmt/arialmt-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ArialMT";
+  src: url("../fonts/arialmt/arialmt-regular-italic.woff") format("woff"), url("../fonts/arialmt/arialmt-regular-italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ArialMT";
+  src: url("../fonts/arialmt/arialmt-bold.woff") format("woff"), url("../fonts/arialmt/arialmt-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ArialMT";
+  src: url("../fonts/arialmt/arialmt-bold-italic.woff") format("woff"), url("../fonts/arialmt/arialmt-bold-italic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "GnuolaneFree";
+  src: url("../fonts/gnuolanefree/gnuolanefree-regular.woff") format("woff"), url("../fonts/gnuolanefree/gnuolanefree-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #fafafa;
+  font: 400 14px/24px "ArialMT", sans-serif;
+  color: #747474;
+}
+
+a {
+  color: #212121;
+  outline: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "GnuolaneFree", sans-serif;
+  font-weight: 400;
+  color: #212121;
+  line-height: normal;
+  margin: 0 0 20px;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 70px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 27px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+ul.marker li,
+ol.marker li {
+  padding-left: 25px;
+  position: relative;
+}
+
+ul.marker li:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #818181;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+ol.marker li {
+  counter-increment: step-counter;
+}
+
+ol.marker li:before {
+  content: counter(step-counter) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #818181;
+}
+
+q {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 20px;
+  background: #fbfbfb;
+  border: 1px solid #eee;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+svg {
+  display: block;
+  overflow: hidden;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #818181;
+  opacity: 1;
+  /* Хром */
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #818181;
+  opacity: 1;
+  /* Файерфокс */
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #818181;
+  opacity: 1;
+  /* Для старых версий файерфокса */
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #818181;
+  opacity: 1;
+  /* едж и эксплорер */
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cover {
+  padding: 0 15px;
+  position: relative;
+  margin: 0 auto;
+  min-width: 300px;
+}
+
+@media screen and (min-width: 480px) {
+  .cover {
+    min-width: 320px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .cover {
+    max-width: 570px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cover {
+    max-width: 730px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .cover {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cover {
+    max-width: 980px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

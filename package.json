@@ -37,5 +37,8 @@
     "gulp-uglify": "^3.0.2",
     "gulp-useref": "^4.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "slick-carousel": "^1.8.1"
+  }
 }

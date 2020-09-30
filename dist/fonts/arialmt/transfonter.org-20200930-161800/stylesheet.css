@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Arial MT';
+    src: url('Arial-BoldMT.woff') format('woff'),
+        url('Arial-BoldMT.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
