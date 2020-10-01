@@ -167,3 +167,35 @@ input::-ms-clear {
     max-width: 980px;
   }
 }
+.slick-dots {
+  margin: 0;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  max-width: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+.slick-dots li  {
+  flex: 0 0 auto;
+  padding: 2px;
+}
+.slick-dots li button {
+  display: block;
+  border: none;
+  padding: 0;
+  outline: 0;
+  cursor: pointer;
+  font-size: 0;
+  width: 14px;
+  height: 14px;
+  opacity: 0.2;
+  background-color: #f8f8f8;
+  transition: all 0.5s ease;
+}
+.slick-dots li.slick-active button {
+  background-color: #ffc000;
+  opacity: 1;
+}

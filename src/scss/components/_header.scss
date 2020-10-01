@@ -1,0 +1,142 @@
+.header {
+  background: #000;
+  &__container {
+    padding: 53px 0 25px 0;
+    border-top: 5px solid #212121; 
+  }
+  &__title-link {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 45px;
+  }
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    font: 400 100px / 80px 'GnuolaneFree', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    letter-spacing: -2.3px;
+    margin: 0;
+    span {
+      color: #ffc000;
+    }
+    &:before,
+    &:after {
+      content: 'dddd';
+      opacity: 0.9;
+      font: 400 12px / 24px 'ArialMT', sans-serif;
+      color: #a0a0a0;
+      text-transform: none;
+      padding: 0 10px;
+      letter-spacing: normal;
+    }
+    &:before {
+      content: 'Most Creative';
+    }
+    &:after {
+      content: 'Bureau';
+    }
+  }
+  &__nav {
+    padding: 10px;
+    border: 5px solid rgba(236,236,236,0.13);
+    position: relative;
+    margin-bottom: 40px;
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -13.5px;
+      left: 39px;
+      border-bottom: 5px solid rgba(236,236,236,0.13);
+      border-right: 5px solid rgba(236,236,236,0.13);
+      height: 20px;
+      width: 20px;
+      background: #000;
+      transform: rotate(45deg);
+    }
+  }
+  &__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    opacity: 0.9;
+    font: 400 20px / 20px 'GnuolaneFree', sans-serif;
+    text-transform: uppercase;
+    justify-content: center;
+  }
+  &__nav-item {
+    padding: 15px 10px 15px 35px;
+    position: relative;
+    counter-increment: nav-counter;
+    @media screen and (min-width: 1200px) {
+      padding: 15px 30px 15px 57px;
+    }
+    @media screen and (min-width: 990px) {
+      padding: 15px 30px 15px 53px;
+    }
+    &:before {
+      content: '0'counter(nav-counter) '.';
+      position: absolute;
+      left: 8px;
+      top: 14.5px;
+      font: 400 20px / 20px 'GnuolaneFree', sans-serif;
+      letter-spacing: 0.9px;
+      color: #fff;
+      @media screen and (min-width: 990px) {
+        left: 27px;
+      }
+    }
+    &_active {
+      &:before {
+        color: #ffc000;
+      }
+    }
+  }
+  &__nav-link {
+    text-decoration: none;
+    opacity: 0.9;
+    font: 400 20px / 20px 'GnuolaneFree', sans-serif;
+    text-transform: uppercase;
+    color: #a0a0a0;
+    letter-spacing: 0.9px;
+    transition: all 0.3s ease;
+    &:hover,
+    &:active {
+      color: #fff;
+    }
+    &_active {
+      color: #fff;
+    }
+  }
+  &__sliders-wrapper {
+    position: relative;
+  }
+  &__descr-slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  &__descr-slider-item {
+    padding: 10px 97px 10px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  &__descr-slider-link {
+    display: block;
+    text-decoration: none;
+    padding: 0 35px;
+  }
+  &__descr-slider-text {
+    font: 400 30px / normal 'GnuolaneFree', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    span {
+      font-size: 80px;
+    }
+  }
+}

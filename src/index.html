@@ -2,44 +2,20 @@
 <html lang="en">
   @include('./include/head.html');
   <body>
-    <div class="cover">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magnam impedit saepe possimus maxime velit, tempora eum, blanditiis sed atque porro fuga. Odio, et odit?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magnam impedit saepe possimus maxime velit, tempora eum, blanditiis sed atque porro fuga. Odio, et odit?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magnam impedit saepe possimus maxime velit, tempora eum, blanditiis sed atque porro fuga. Odio, et odit?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magnam impedit saepe possimus maxime velit, tempora eum, blanditiis sed atque porro fuga. Odio, et odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magnam impedit saepe possimus maxime velit, tempora eum, blanditiis sed atque porro fuga. Odio, et odit?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magnam impedit saepe possimus maxime velit, tempora eum, blanditiis sed atque porro fuga. Odio, et odit? Lorem ipsum dolor sit amet consectetur adipisicing <b>elit</b> . Tempore magnam impedit saepe possimus maxime velit, tempora eum, blanditiis sed atque porro fuga. Odio, et odit?</p>
-    <p>Lorem ipsum dolor sit <strong>amet</strong> consectetur adipisicing elit. Tempore magnam impedit saepe possimus maxime velit, tempora eum, blanditiis sed atque porro fuga. Odio, et odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magnam impedit saepe possimus maxime velit, tempora eum, blanditiis sed atque porro fuga. Odio, et odit?</p>
-      sd
-    <input type="text" placeholder="text">
-    <textarea name="" id="" cols="30" rows="10" placeholder="text"></textarea>
-    <button>text</button>
-    <select name="" id=""></select>
-
-    <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, eligendi!</q>
-
-    <ul class="marker">
-      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, facilis!</li>
-      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, facilis!</li>
-      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, facilis!</li>
-      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, facilis!</li>
-    </ul>
-
-    <ol class="marker">
-      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, facilis!</li>
-      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, facilis!</li>
-      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, facilis!</li>
-      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, facilis!</li>
-    </ol>
-
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, praesentium!</h1>
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, praesentium!</h2>
-    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, praesentium!</h3>
-    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, praesentium!</h4>
-    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, praesentium!</h5>
-    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, praesentium!</h6>
+    <div class="wrapper">
+      <!-- (main) -->
+      <div class="wrapper__content">
+        <!-- (header) -->
+        @include('./include/header.html');
+        <!-- End (header) -->
+      </div>
+      <!-- End (main) -->
+      <!-- (footer) -->
+      <div class="wrapper__footer">
+        @include('./include/footer.html');
+      </div>
+      <!-- End (footer) -->
     </div>
-    
-
-
 
     @include('./include/script.html');
   </body>
