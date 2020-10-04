@@ -1,0 +1,15 @@
+.projects {
+  &__cover {
+  border-top: 5px solid rgba(0, 0, 0, 0.4);
+  }
+  &__content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -10px;
+    padding-bottom: 20px;
+  }
+  &__title-wrapper {
+    margin-bottom: 5px;
+  }
+}

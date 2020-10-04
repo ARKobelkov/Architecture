@@ -9,22 +9,11 @@ $(function () {
 		autoplay: true,
 		autoplaySpeed: 5000,
 		arrows: false,
-		dots: false,
+		dots: true,
+		appendDots: '#main-slider',
 		fade: true,
 		speed: 1000,
-		pauseOnHover: false
+		pauseOnHover: false,
+		zIndex: 100
 	});
-
-	// Descr-slider
-	$('#descr-slider').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: false,
-		autoplaySpeed: 5000,
-		arrows: false,
-		dots: true,
-		speed: 1000,
-		appendDots: '#descr-slider'
-	});
-
 });

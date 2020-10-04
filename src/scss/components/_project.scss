@@ -1,0 +1,22 @@
+.project {
+  padding: 10px;
+  width: 25%;
+  &__link {
+    display: block;
+    text-decoration: none;
+  }
+  &__title {
+    text-align: center;
+    font: 400 30px / 27px 'GnuolaneFree', sans-serif;
+    text-transform: uppercase;
+    color: $titlecolor;
+    margin: 0;
+    padding: 21px 0;
+    border: 5px solid #dfdcdc;
+  }
+  &__img-wrapper {
+    border: 5px solid #dfdcdc;
+    border-top: none;
+    padding: 10px;
+  }
+}

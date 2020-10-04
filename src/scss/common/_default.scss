@@ -13,8 +13,10 @@ body {
   color: $fontcolor;
 }
 a {
-  color: #212121;
   outline: none;
+  font: 400 16px / 27px 'GnuolaneFree', sans-serif;
+  text-decoration: underline;
+  color: $titlecolor;
 }
 a:hover,
 a:active {
