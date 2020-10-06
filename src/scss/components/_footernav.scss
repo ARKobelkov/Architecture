@@ -1,0 +1,21 @@
+.footernav {
+  padding: 0 17px;
+  &__title {
+    font: 400 20px / 27px 'GnuolaneFree', sans-serif;
+    text-transform: uppercase;
+    color: $titlecolor;
+  }
+  &__item {
+    padding: 3px 0;
+  }
+  &__link {
+    display: block;
+    font: 400 14px / 17px 'ArialMT', sans-serif;
+    text-decoration: none;
+    color: $secondcolor;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $titlecolor;
+    }
+  }
+}

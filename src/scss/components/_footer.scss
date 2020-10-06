@@ -1,0 +1,101 @@
+.footer {
+  &__border {
+    border-top: 5px solid #dfdcdc;
+  }
+  &__wrapper {
+    padding-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -17px;
+  }
+  &__home {
+    width: 16%;
+  }
+  &__inspirations {
+    width: 17%;
+  }
+  &__tips {
+    width: 16%;
+  }
+  &__advice {
+    width: 16%;
+  }
+  &__links {
+    width: 35%;
+    padding: 0 17px;
+    position: relative;
+  }
+  &__links-wrapper {
+    position: absolute;
+    right: 50px;
+    top: 0;
+  }
+  &__privacy-wrapper {
+    display: flex;
+    margin-top: 2px;
+    margin-bottom: 6px;
+    span {
+      display: block;
+      font: 400 16px / 25px 'GnuolaneFree', sans-serif;
+      color: #323232;
+      margin: 0 3px;
+    }
+  }
+  &__architecture,
+  &__policy {
+    display: block;
+    font: 400 16px / 25px 'GnuolaneFree', sans-serif;
+    color: #323232;
+    text-decoration: none;
+    margin: 0 3px;
+    transition: all 0.3s ease;
+  }
+  &__policy:hover,
+  &__policy:active {
+    text-decoration: underline;
+  }
+  &__social-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__social-item {
+    padding: 2px;
+  }
+  &__social-twitter,
+  &__social-facebook,
+  &__social-google {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    border-radius: 2px;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    &:hover {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+    }
+  }
+  &__social-twitter {
+    background-color: #24b5eb;
+  }
+  &__social-facebook {
+    background-color: #004e76;
+  }
+  &__social-google {
+    background-color: #2a2a2a;
+  }
+  &__icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    font: 400 27px / 1.4 'Francois One', sans-serif;
+    color: #ffffff;
+    &_line-height {
+      line-height: 1.1;
+    }
+  }
+}

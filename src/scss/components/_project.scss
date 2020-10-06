@@ -4,6 +4,17 @@
   &__link {
     display: block;
     text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover .project__title,
+    &:hover .project__img-wrapper {
+      border: 5px solid #747474;
+    }
+    &:hover .project__title {
+      border-bottom: 2.5px solid #747474;
+    }
+    &:hover .project__img-wrapper {
+      border-top: 2.5px solid #747474;
+    }
   }
   &__title {
     text-align: center;
@@ -13,10 +24,13 @@
     margin: 0;
     padding: 21px 0;
     border: 5px solid #dfdcdc;
+    transition: all 0.3s ease;
+    border-bottom: 2.5px solid #dfdcdc;
   }
   &__img-wrapper {
     border: 5px solid #dfdcdc;
-    border-top: none;
     padding: 10px;
+    transition: all 0.3s ease;
+    border-top: 2.5px solid #dfdcdc;
   }
 }

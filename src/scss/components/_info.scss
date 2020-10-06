@@ -1,0 +1,100 @@
+.info {
+  &__wrapper {
+    padding-bottom: 42px;
+  }
+  &__content {
+    float: left;
+    padding-right: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -25px;
+    z-index: 0;
+  }
+  &__news {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    padding: 10px 25px;
+  }
+  &__news-title-wrapper {
+    margin-bottom: 30px;
+  }
+  &__news-wrapper {
+    border: 3px solid #dfdcdc;
+    margin-bottom: 20px;
+  }
+  &__new-link {
+    display: block;
+    border: 3px solid #dfdcdc;
+    text-decoration: none;
+    padding: 29px 30px;
+    transition: all 0.3s ease;
+    &:hover {
+      border: 3px solid #747474;
+    }
+  }
+  &__new-date {
+    font: 400 30px / 27px 'GnuolaneFree', sans-serif;
+    font-family: GnuolaneFree;
+    color: $titlecolor;
+  }
+  &__new-text {
+    font: 400 14px / 25px 'ArialMT', sans-serif;
+    color: $fontcolor;
+    margin: 0;
+    opacity: 0.9;
+  }
+  &__more-news-link {
+    font: 400 16px / 27px 'GnuolaneFree', sans-serif;
+    font-family: GnuolaneFree;
+    text-decoration: underline;
+    color: $titlecolor;
+    transition: all 0.3s ease;
+    padding-left: 30px;
+    align-self: start;
+  }
+  &__about {
+    width: 52%;
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__about-content {
+    padding-right: 15px;
+  }
+  &__about-title {
+    font: 400 30px / 27px 'GnuolaneFree', sans-serif;
+    font-family: GnuolaneFree;
+    color: $titlecolor;
+    margin-bottom: 30px;
+  }
+  &__about-descr {
+    font: 400 16px / 27px 'GnuolaneFree', sans-serif;
+    color: $titlecolor;
+  }
+  &__about-text {
+    opacity: 0.9;
+    font: 400 14px / 24px 'ArialMT', sans-serif;
+    color: $fontcolor;
+  }
+  &__more-about-link {
+    font: 400 16px / 27px 'GnuolaneFree', sans-serif;
+    font-family: GnuolaneFree;
+    text-decoration: underline;
+    color: $titlecolor;
+    transition: all 0.3s ease;
+    align-self: start;
+  }
+  &__sidebar {
+    padding-left: 20px;
+    float: left;
+    width: 250px;
+    margin-left: -250px;
+    z-index: 1;
+  }
+  &__sidebanner {
+    margin-bottom: 40px;
+  }
+}
