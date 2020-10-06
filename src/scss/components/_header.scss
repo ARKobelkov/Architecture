@@ -50,6 +50,7 @@
   }
   &__nav-item {
     position: relative;
+    flex: 1 1 auto;
     &:last-child .header__sub-submenu-wrapper {
       left: -100%;
       padding-right: 2px;
@@ -81,7 +82,8 @@
   }
   &__nav-link {
     display: block;
-    padding: 25px 30.5px;
+    padding: 25px 10px;
+    text-align: center;
     text-decoration: none;
     opacity: 0.9;
     font: 400 20px / 20px 'GnuolaneFree', sans-serif;
@@ -106,7 +108,7 @@
     transform-origin: 0 0;
     position: absolute;
     top: 100%;
-    left: 30px;
+    left: 12%;
     width: 145px;
   }
   &__sub-submenu-wrapper {
