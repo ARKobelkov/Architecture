@@ -8,31 +8,71 @@
     flex-wrap: wrap;
     position: relative;
     margin: 0 -17px;
+    @media screen and (min-width: 768px) {
+      flex-wrap: nowrap;
+    }
   }
   &__home {
-    width: 16%;
+    width: 50%;
+    @media screen and (min-width: 768px) {
+      width: 16%;
+    }
+    @media screen and (min-width: 480px) {
+      width: 25%;
+    }
   }
   &__inspirations {
-    width: 17%;
+    width: 50%;
+    @media screen and (min-width: 768px) {
+      width: 17%;
+    }
+    @media screen and (min-width: 480px) {
+      width: 25%;
+    }
   }
   &__tips {
-    width: 16%;
+    width: 50%;
+    @media screen and (min-width: 768px) {
+      width: 16%;
+    }
+    @media screen and (min-width: 480px) {
+      width: 25%;
+    }
   }
   &__advice {
-    width: 16%;
+    width: 50%;
+    @media screen and (min-width: 990px) {
+      width: 16%;
+    }
+    @media screen and (min-width: 768px) {
+      width: 18%;
+    }
+    @media screen and (min-width: 480px) {
+      width: 25%;
+    }
   }
   &__links {
-    width: 35%;
+    width: 100%;
     padding: 0 17px;
     position: relative;
+    @media screen and (min-width: 990px) {
+      width: 35%;
+    }
+    @media screen and (min-width: 768px) {
+      width: 33%;
+    }
   }
   &__links-wrapper {
-    position: absolute;
-    right: 50px;
-    top: 0;
+    position: relative;
+    @media screen and (min-width: 990px) {
+      position: absolute;
+      right: 50px;
+      top: 0;
+    }
   }
   &__privacy-wrapper {
     display: flex;
+    justify-content: center;
     margin-top: 2px;
     margin-bottom: 6px;
     span {
@@ -40,6 +80,9 @@
       font: 400 16px / 25px 'GnuolaneFree', sans-serif;
       color: #323232;
       margin: 0 3px;
+    }
+    @media screen and (min-width: 768px) {
+      justify-content: flex-start;
     }
   }
   &__architecture,
@@ -58,6 +101,10 @@
   &__social-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+      justify-content: flex-start;
+    }
   }
   &__social-item {
     padding: 2px;

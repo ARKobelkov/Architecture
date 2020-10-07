@@ -1,8 +1,13 @@
 .project {
   padding: 10px;
-  width: 25%;
+  width: 50%;
+  @media screen and (min-width: 990px) {
+    width: 25%;
+  }
   &__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     text-decoration: none;
     transition: all 0.3s ease;
     &:hover .project__title,
@@ -17,6 +22,7 @@
     }
   }
   &__title {
+    flex: 1 1 auto;
     text-align: center;
     font: 400 30px / 27px 'GnuolaneFree', sans-serif;
     text-transform: uppercase;
@@ -32,5 +38,9 @@
     padding: 10px;
     transition: all 0.3s ease;
     border-top: 2.5px solid #dfdcdc;
+  }
+  &__img {
+    max-width: none;
+    width: 100%;
   }
 }

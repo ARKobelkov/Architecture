@@ -14,6 +14,24 @@ $(function () {
 		fade: true,
 		speed: 1000,
 		pauseOnHover: false,
-		zIndex: 100
+		zIndex: 100,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					dots: false
+				}
+			}
+		]
 	});
+
+	// Mobile-menu
+	$('#open-menu').on('click', function () {
+		$('body').addClass('visible-menu');
+	});
+	
+	$('#close-menu').on('click', function () {
+		$('body').removeClass('visible-menu');
+	});
+
 });

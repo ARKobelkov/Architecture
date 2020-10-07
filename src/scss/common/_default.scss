@@ -198,3 +198,9 @@ input::-ms-clear {
   background-color: #ffc000;
   opacity: 1;
 }
+body.visible-menu {
+  overflow: hidden;
+}
+body.visible-menu .header__nav {
+  left: 0;
+}
