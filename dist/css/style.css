@@ -49,7 +49,7 @@ body {
 }
 
 body {
-  background: #fafafa;
+  background: #f1f1f1;
   font: 400 14px/24px "ArialMT", sans-serif;
   color: #747474;
 }
@@ -555,6 +555,63 @@ body.visible-menu .header__nav {
   color: #212121;
 }
 
+.company-info {
+  text-align: center;
+}
+
+.company-info__title {
+  font: 400 27px/30px "GnuolaneFree", sans-serif;
+  color: #212121;
+  margin-bottom: 25px;
+}
+
+.company-info__subtitle {
+  font: 400 16px/27px "GnuolaneFree", sans-serif;
+  color: #323232;
+  padding: 0 20px;
+  margin-bottom: 12px;
+}
+
+.company-info__text {
+  opacity: 0.9;
+  font: 400 14px/24px "ArialMT", sans-serif;
+  color: #747474;
+  margin-bottom: 10px;
+}
+
+.worker {
+  border: 5px solid #dfdcdc;
+}
+
+.worker__img-wrapper {
+  padding: 10px 10px 20px 10px;
+}
+
+.worker__img {
+  min-width: none;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.worker__text {
+  border-top: 5px solid #dfdcdc;
+  text-align: center;
+  padding: 8px 10px;
+}
+
+.worker__name {
+  font: 400 24px/23px "GnuolaneFree", sans-serif;
+  text-transform: uppercase;
+  color: #212121;
+  margin-bottom: 2px;
+}
+
+.worker__position {
+  font: 400 16px/16px "GnuolaneFree", sans-serif;
+  color: #212121;
+  margin-bottom: 0;
+}
+
 .header {
   background: #000;
 }
@@ -839,7 +896,7 @@ body.visible-menu .header__nav {
   -o-transform-origin: 0 0;
   transform-origin: 0 0;
   position: absolute;
-  top: 100%;
+  top: 0;
   width: 145px;
 }
 
@@ -1037,6 +1094,7 @@ body.visible-menu .header__nav {
 .info__news {
   width: 100%;
   padding: 10px 0 20px 0;
+  min-height: 1px;
 }
 
 .info__news-title-wrapper {
@@ -1097,6 +1155,7 @@ body.visible-menu .header__nav {
 .info__sidebar {
   width: 230px;
   margin-top: 10px;
+  min-height: 1px;
 }
 
 .info__sidebanner {
@@ -1109,6 +1168,7 @@ body.visible-menu .header__nav {
 
 .footer__wrapper {
   padding-top: 55px;
+  padding-bottom: 30px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -1256,6 +1316,38 @@ body.visible-menu .header__nav {
   line-height: 1.1;
 }
 
+.company__cover {
+  padding: 35px 15px 5px 15px;
+}
+
+.company__title-wrapper {
+  margin-bottom: 30px;
+}
+
+.company__info-wrapper {
+  margin-bottom: 50px;
+}
+
+.left-workers {
+  width: 80%;
+  min-height: 1px;
+  margin: 0 auto;
+}
+
+.left-workers__worker {
+  margin-bottom: 20px;
+}
+
+.right-workers {
+  width: 80%;
+  min-height: 1px;
+  margin: 0 auto;
+}
+
+.right-workers__worker {
+  margin-bottom: 20px;
+}
+
 @media screen and (min-width: 480px) {
   .cover {
     min-width: 320px;
@@ -1275,7 +1367,7 @@ body.visible-menu .header__nav {
   }
 
   .footer__home {
-    width: 25%;
+    width: 22%;
   }
 
   .footer__inspirations {
@@ -1287,13 +1379,35 @@ body.visible-menu .header__nav {
   }
 
   .footer__advice {
-    width: 25%;
+    width: 28%;
+  }
+
+  .left-workers {
+    padding-right: 25px;
+    float: left;
+    width: 50%;
+    margin: auto;
+  }
+
+  .right-workers {
+    padding-left: 25px;
+    float: left;
+    width: 50%;
+    margin: auto;
   }
 }
 
 @media screen and (min-width: 600px) {
   .cover {
     max-width: 570px;
+  }
+
+  .left-workers {
+    padding-right: 40px;
+  }
+
+  .right-workers {
+    padding-left: 40px;
   }
 }
 
@@ -1356,6 +1470,10 @@ body.visible-menu .header__nav {
   .header__nav-link {
     padding: 25px 10px;
     text-align: center;
+  }
+
+  .header__submenu-wrapper {
+    top: 100%;
   }
 
   .header__nav-item:hover > .header__submenu-wrapper {
@@ -1484,6 +1602,27 @@ body.visible-menu .header__nav {
     position: absolute;
     right: 50px;
     top: 0;
+  }
+
+  .company__content {
+    float: left;
+    padding: 0 222px;
+  }
+
+  .company__info-wrapper {
+    padding: 0 70px;
+  }
+
+  .left-workers {
+    margin-left: -100%;
+    width: 222px;
+    padding-right: 0;
+  }
+
+  .right-workers {
+    margin-left: -222px;
+    width: 222px;
+    padding-left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

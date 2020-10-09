@@ -209,8 +209,11 @@
     transform: scaleY(0);
     transform-origin: 0 0;
     position: absolute;
-    top: 100%;
+    top: 0;
     width: 145px;
+    @media screen and (min-width: 768px) {
+      top: 100%;
+    }
   }
   &__sub-submenu-wrapper {
     padding-left: 2px;

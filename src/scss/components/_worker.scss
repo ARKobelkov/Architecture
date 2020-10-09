@@ -1,0 +1,27 @@
+.worker {
+  border: 5px solid #dfdcdc;
+  &__img-wrapper {
+    padding: 10px 10px 20px 10px;
+  }
+  &__img {
+    min-width: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__text {
+    border-top: 5px solid #dfdcdc;
+    text-align: center;
+    padding: 8px 10px;
+  }
+  &__name {
+    font: 400 24px / 23px 'GnuolaneFree', sans-serif; 
+    text-transform: uppercase;
+    color: $titlecolor;
+    margin-bottom: 2px;
+  }
+  &__position {
+    font: 400 16px / 16px 'GnuolaneFree', sans-serif; 
+    color: $titlecolor;
+    margin-bottom: 0;
+  }
+}

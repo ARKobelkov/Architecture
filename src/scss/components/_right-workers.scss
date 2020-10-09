@@ -1,0 +1,22 @@
+.right-workers {
+  width: 80%;
+  min-height: 1px;
+  margin: 0 auto;
+  @media screen and (min-width: 990px) {
+    margin-left: -222px;
+    width: 222px;
+    padding-left: 0;
+  }
+  @media screen and (min-width: 600px) {
+    padding-left: 40px;
+  }
+  @media screen and (min-width: 480px) {
+    padding-left: 25px;
+    float: left;
+    width: 50%;
+    margin: auto;
+  }
+  &__worker {
+    margin-bottom: 20px;
+  }
+}

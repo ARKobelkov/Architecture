@@ -11,7 +11,7 @@ $(function () {
     autoplaySpeed: 5000,
     arrows: false,
     dots: true,
-    appendDots: '#main-slider',
+    appendDots: '[data-dots="true"]',
     fade: true,
     speed: 1000,
     pauseOnHover: false,

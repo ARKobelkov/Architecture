@@ -6,164 +6,275 @@
       <!-- (main) -->
       <div class="wrapper__content">
         <!-- (header) -->
-        @include('./include/header.html');
+        <header class="header">
+          <div class="header__cover cover">
+            <div class="header__container">
+              <div class="header__title-wrapper">
+                <div class="header__subtitle">Most Creative</div>
+                <a href="/" class="header__title-link">
+                  <h1 class="header__title"><span>archi</span>tecture</h1>
+                </a>
+                <div class="header__subtitle">Bureau</div>
+              </div>
+              <div class="header__pull-wrapper" id="open-menu">
+                <div class="header__pull">
+                  <div class="header__pull-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="header__pull-text">menu</div>
+                </div>
+              </div>
+              <nav class="header__nav" id="menu">
+                <div class="header__close-btn" id="close-menu"></div>
+                <ul class="header__nav-list">
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link"><span>01.</span>Home</a>
+                  </li>
+                  <li class="header__nav-item header__nav-item_active">
+                    <a href="#" class="header__nav-link"><span>02.</span>about us</a>
+                    <div class="header__submenu-wrapper">
+                      <ul class="header__submenu">
+                        <li class="header__submenu-item">
+                          <a href="#" class="header__submenu-link">Our history</a>
+                        </li>
+                        <li class="header__submenu-item">
+                          <a href="#" class="header__submenu-link">Info</a>
+                          <div class="header__sub-submenu-wrapper">
+                            <ul class="header__submenu">
+                              <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">our news</a>
+                              </li>
+                              <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">capabilities</a>
+                              </li>
+                              <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">profile</a>
+                              </li>
+                            </ul>
+                        </li>
+                        <li class="header__submenu-item">
+                          <a href="#" class="header__submenu-link">partners</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link"><span>03.</span>Services</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link"><span>04.</span>gallery</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link"><span>05.</span>what’s new</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link"><span>06.</span>contacts</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__slider-wrapper">
+                <div class="header__main-slider" id="main-slider">
+                  <div class="header__main-slider-item">
+                    <a href="#" class="header__main-slider-link">
+                      <img src="images/content/header-slider/house1.jpg" alt="house" class="header__main-slider-img">
+                    </a>
+                  </div>
+                  <div class="header__main-slider-item">
+                    <a href="#" class="header__main-slider-link">
+                      <img src="images/content/header-slider/house2.jpg" alt="house" class="headeheader-slider-img">
+                    </a>
+                  </div>
+                  <div class="header__main-slider-item">
+                    <a href="#" class="header__main-slider-link">
+                      <img src="images/content/header-slider/house3.jpg" alt="house" class="header__main-slider-img">
+                    </a>
+                  </div>
+                  <div class="header__main-slider-item">
+                    <a href="#" class="header__main-slider-link">
+                      <img src="images/content/header-slider/house4.jpg" alt="house" class="header__main-slider-img">
+                    </a>
+                  </div>
+                  <div class="header__main-slider-item">
+                    <a href="#" class="header__main-slider-link">
+                      <img src="images/content/header-slider/house5.jpg" alt="house" class="header__main-slider-img">
+                    </a>
+                  </div>
+                  <div class="header__main-slider-item">
+                    <a href="#" class="header__main-slider-link">
+                      <img src="images/content/header-slider/house6.jpg" alt="house" class="header__main-slider-img">
+                    </a>
+                  </div>
+                  <div class="header__main-slider-item">
+                    <a href="#" class="header__main-slider-link">
+                      <img src="images/content/header-slider/house7.jpg" alt="house" class="header__main-slider-img">
+                    </a>
+                  </div>
+                  <div class="header__main-slider-item">
+                    <a href="#" class="header__main-slider-link">
+                      <img src="images/content/header-slider/house8.jpg" alt="house" class="header__main-slider-img">
+                    </a>
+                  </div>
+                  <div class="header__main-slider-item">
+                    <a href="#" class="header__main-slider-link">
+                      <img src="images/content/header-slider/house9.jpg" alt="house" class="header__main-slider-img">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
         <!-- End (header) -->
         <!-- (main-content) -->
         <main class="main">
-          <!-- (projects) -->
-          <section class="projects">
-            <div class="projects__cover cover">
-              <div class="projects__title-wrapper">
+          <!-- (company) -->
+          <section class="company">
+            <div class="company__cover cover">
+              <div class="company__title-wrapper">
                 <!-- (title) -->
                 <div class="title">
                   <div class="title__divider"></div>
-                  <h3 class="title__text">latest projects</h3>
+                  <h3 class="title__text">our company</h3>
                   <div class="title__divider"></div>
                 </div>
                 <!-- End (title) -->
               </div>
-              <div class="projects__content-wrapper">
-                <!-- (project) -->
-                <div class="project">
-                  <a href="#" class="project__link">
-                    <h4 class="project__title">Residential</h4>
-                    <div class="project__img-wrapper">
-                      <img src="images/content/projects/project1.jpg" alt="project1" class="project__img">
+              <div class="company__info clearfix">
+                <!-- (company-content) -->
+                <div class="company__content">
+                  <div class="company__info-wrapper">
+                    <!-- (company-info) -->
+                    <div class="company-info">
+                      <h3 class="company-info__title">A Few Words About Us</h3>
+                      <p class="company-info__subtitle">Consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
+                      <p class="company-info__text">Consectetuer adipiscing elit. Praesent vestibulum moles- tie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque pe- natibus et magnis dis parturient montes, nascetur.
+                      ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>
                     </div>
-                  </a>
-                </div>
-                <!-- End (project) -->
-                <!-- (project) -->
-                <div class="project">
-                  <a href="#" class="project__link">
-                    <h4 class="project__title">Commercial</h4>
-                    <div class="project__img-wrapper">
-                      <img src="images/content/projects/project2.jpg" alt="project1" class="project__img">
-                    </div>
-                  </a>
-                </div>
-                <!-- End (project) -->
-                <!-- (project) -->
-                <div class="project">
-                  <a href="#" class="project__link">
-                    <h4 class="project__title">Design Sketches</h4>
-                    <div class="project__img-wrapper">
-                      <img src="images/content/projects/project3.jpg" alt="project1" class="project__img">
-                    </div>
-                  </a>
-                </div>
-                <!-- End (project) -->
-                <!-- (project) -->
-                <div class="project">
-                  <a href="#" class="project__link">
-                    <h4 class="project__title">Concepts</h4>
-                    <div class="project__img-wrapper">
-                      <img src="images/content/projects/project4.jpg" alt="project1" class="project__img">
-                    </div>
-                  </a>
-                </div>
-                <!-- End (project) -->
-              </div>
-            </div>
-          </section>
-          <!-- End (projects) -->
-          <!-- (info) -->
-          <section class="info">
-            <div class="info__cover cover">
-              <div class="info__wrapper clearfix">
-                <!-- (info-content) -->
-                <section class="info__content">
-                  <article class="info__about">
-                    <div class="info__about-content">
-                      <h3 class="info__about-title">A Few Words About Us</h3>
-                      <p class="info__about-descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
-                      <p class="info__about-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur. Donec accumsan malesuada.</p>
-                      <p class="info__about-text"> ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem.  Donec accumsan malesuada orci. Donec sit amet eros. Sed laoreet aliquam.</p>
-                    </div>
-                    <a href="#" class="info__more-about-link">More About Us</a>
-                  </article>
-                </section>
-                <!-- End (info-content) -->
-                <!-- (info-news) -->
-                <article class="info__news">
-                  <div class="info__news-title-wrapper">
-                    <!-- (title) -->
-                  <div class="title">
-                    <div class="title__divider"></div>
-                    <h3 class="title__text">what’s new</h3>
-                    <div class="title__divider"></div>
+                    <!-- End (company-info) -->
                   </div>
-                  <!-- End (title) -->
-                  </div>
-                  <div class="info__news-wrapper">
-                    <div class="info__new">
-                      <a href="#" class="info__new-link">
-                        <h4 class="info__new-date">NOV 20, 2011</h4>
-                        <p class="info__new-text">Lorem ipsum dolor sit amet, consect- etuer adipiscing elit. Praesent vestibu- lum molestie lacus.</p>
-                      </a>
+                  <div class="company__info-wrapper">
+                    <!-- (company-info) -->
+                    <div class="company-info">
+                      <h3 class="company-info__title">Company Profile</h3>
+                      <p class="company-info__subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy</p>
+                      <p class="company-info__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis 
+                      parturient montes, nascetur.</p>
                     </div>
-                    <div class="info__new">
-                      <a href="#" class="info__new-link">
-                        <h4 class="info__new-date">NOV 19, 2011</h4>
-                        <p class="info__new-text">Lorem ipsum dolor sit amet, consect- etuer adipiscing elit. Praesent vestibu- lum molestie lacus.</p>
-                      </a>
-                    </div>
+                    <!-- End (company-info) -->
                   </div>
-                  <a href="#" class="info__more-news-link">More news</a>
-                </article>
-                <!-- End (info-news) -->
-                <!-- (info-sidebar) -->
-                <aside class="info__sidebar">
-                 <div class="info__sidebanner">
-                    <!-- (sidebanner) -->
-                  <div class="sidebanner">
-                    <a href="#" class="sidebanner__link">
-                      <h3 class="sidebanner__title">book</h3>
-                      <p class="sidebanner__subtitle">our catalogue</p>
-                      <p class="sidebanner__btn">book online</p>
-                      <div class="sidebanner__img-wrapper">
-                        <img src="images/content/sidebanner-img.png" alt="banner" class="sidebanner__img">
+                  <div class="company__info-wrapper">
+                    <!-- (company-info) -->
+                    <div class="company-info">
+                      <h3 class="company-info__title">Our Mission</h3>
+                      <p class="company-info__subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus.
+                      <br><br>
+                      1. Aenean nonummy hendrerit mauris. <br>
+                      2.  Cum sociis natoque penatibus et magnis dis parturient <br>
+                      3. Nulla dui. Fusce feugiat malesuada odio. 
+                      </p>
+                      <p class="company-info__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis 
+                      parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem.  Donec accumsan malesuada orci. Donec sit amet eros.</p>
+                    </div>
+                    <!-- End (company-info) -->
+                  </div>
+                </div>
+                <!-- End (company-content) -->
+                <!-- (left-workers) -->
+                <section class="left-workers">
+                  <div class="left-workers__wrapper">
+                    <div class="left-workers__worker">
+                      <!-- (worker) -->
+                      <div class="worker">
+                        <div class="worker__img-wrapper">
+                          <img src="images/content/company/manager1.png" alt="worker1" class="worker__img">
+                        </div>
+                        <div class="worker__text">
+                          <h5 class="worker__name">Lora lopes</h5>
+                          <p class="worker__position">Principal, Lead Designer</p>
+                        </div>
                       </div>
-                    </a>
+                      <!-- End (worker) -->
+                    </div>
+                    <div class="left-workers__worker">
+                      <!-- (worker) -->
+                      <div class="worker">
+                        <div class="worker__img-wrapper">
+                          <img src="images/content/company/manager2.png" alt="worker1" class="worker__img">
+                        </div>
+                        <div class="worker__text">
+                          <h5 class="worker__name">Dan Adams</h5>
+                          <p class="worker__position">Special Projects</p>
+                        </div>
+                      </div>
+                      <!-- End (worker) -->
+                    </div>
+                    <div class="left-workers__worker">
+                      <!-- (worker) -->
+                      <div class="worker">
+                        <div class="worker__img-wrapper">
+                          <img src="images/content/company/manager3.png" alt="worker1" class="worker__img">
+                        </div>
+                        <div class="worker__text">
+                          <h5 class="worker__name">mark poller</h5>
+                          <p class="worker__position">Quality Control Manager</p>
+                        </div>
+                      </div>
+                      <!-- End (worker) -->
+                    </div>
                   </div>
-                  <!-- End (sidebanner) -->
-                 </div>
-                 <div class="info__sidenav">
-                   <!-- (sidenav) -->
-                  <div class="sidenav">
-                    <h4 class="sidenav__title">Categories</h4>
-                    <ul class="sidenav__list">
-                      <li class="sidenav__item">
-                        <a href="#" class="sidenav__link">Commercial</a>
-                      </li>
-                      <li class="sidenav__item">
-                        <a href="#" class="sidenav__link">Corporate</a>
-                      </li>
-                      <li class="sidenav__item">
-                        <a href="#" class="sidenav__link">Renovation and Remodeling</a>
-                      </li>
-                      <li class="sidenav__item">
-                        <a href="#" class="sidenav__link">Education</a>
-                      </li>
-                      <li class="sidenav__item">
-                        <a href="#" class="sidenav__link">Cultural</a>
-                      </li>
-                      <li class="sidenav__item">
-                        <a href="#" class="sidenav__link">Government</a>
-                      </li>
-                      <li class="sidenav__item">
-                        <a href="#" class="sidenav__link">Production Builder Product Design</a>
-                      </li>
-                    </ul>
+                </section>
+                <!-- End (left-workers) -->
+                <!-- (right-workers) -->
+                <section class="right-workers">
+                  <div class="right-workers__wrapper">
+                    <div class="right-workers__worker">
+                      <!-- (worker) -->
+                      <div class="worker">
+                        <div class="worker__img-wrapper">
+                          <img src="images/content/company/manager4.png" alt="worker1" class="worker__img">
+                        </div>
+                        <div class="worker__text">
+                          <h5 class="worker__name">anna grey</h5>
+                          <p class="worker__position">Principal, Chief Administrator</p>
+                        </div>
+                      </div>
+                      <!-- End (worker) -->
+                    </div>
+                    <div class="right-workers__worker">
+                      <!-- (worker) -->
+                      <div class="worker">
+                        <div class="worker__img-wrapper">
+                          <img src="images/content/company/manager5.png" alt="worker1" class="worker__img">
+                        </div>
+                        <div class="worker__text">
+                          <h5 class="worker__name">sam tomson</h5>
+                          <p class="worker__position">Director of Projects</p>
+                        </div>
+                      </div>
+                      <!-- End (worker) -->
+                    </div>
+                    <div class="right-workers__worker">
+                      <!-- (worker) -->
+                      <div class="worker">
+                        <div class="worker__img-wrapper">
+                          <img src="images/content/company/manager6.png" alt="worker1" class="worker__img">
+                        </div>
+                        <div class="worker__text">
+                          <h5 class="worker__name">marta stuart</h5>
+                          <p class="worker__position">Project Manager</p>
+                        </div>
+                      </div>
+                      <!-- End (worker) -->
+                    </div>
                   </div>
-                   <!-- End (sidenav) -->
-                 </div>
-                </aside>
-                <!-- End (info-sidebar) -->
+                </section>
+                <!-- End (right-workers) -->
               </div>
             </div>
           </section>
-          <!-- End (info) -->
+          <!-- End (company) -->
         </main>
         <!-- End (main-content) -->
       </div>
