@@ -612,6 +612,98 @@ body.visible-menu .header__nav {
   margin-bottom: 0;
 }
 
+.contacts {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 7px;
+}
+
+.contacts__title {
+  font: 400 30px/27px "GnuolaneFree", sans-serif;
+  color: #212121;
+  border-bottom: 5px solid #dfdcdc;
+  padding-top: 10px;
+  padding-bottom: 13px;
+  margin-bottom: 33px;
+}
+
+.contacts__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__img-wrapper {
+  border: 5px solid #dfdcdc;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding: 10px 10px 12px 10px;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.contacts__img {
+  max-width: none;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contacts__text-wrapper {
+  margin-left: 20px;
+  padding-right: 30px;
+}
+
+.contacts__text {
+  opacity: 0.9;
+  font: 400 14px/24px "ArialMT", sans-serif;
+  color: #747474;
+  margin-bottom: 15px;
+}
+
+.contacts__info {
+  margin-bottom: 5px;
+}
+
+.contacts__phone-text,
+.contacts__phone-link,
+.contacts__fax-text,
+.contacts__fax-link,
+.contacts__mail-text,
+.contacts__mail-link {
+  font: 400 16px/27px "GnuolaneFree", sans-serif;
+  color: #212121;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contacts__fax-text {
+  margin-right: 36px;
+}
+
+.contacts__mail-text,
+.contacts__mail-link {
+  color: #a2a2a2;
+}
+
+.contacts__mail-link:hover {
+  color: #212121;
+}
+
+.contacts__phone-link:hover,
+.contacts__fax-link:hover {
+  text-decoration: underline;
+}
+
 .header {
   background: #000;
 }
@@ -1346,6 +1438,39 @@ body.visible-menu .header__nav {
 
 .right-workers__worker {
   margin-bottom: 20px;
+}
+
+.services__info {
+  padding-left: 310px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.services__content-wrapper {
+  padding-left: 50px;
+}
+
+.services__title {
+  font: 400 30px/27px "GnuolaneFree", sans-serif;
+  color: #212121;
+  margin-bottom: 30px;
+}
+
+.services__text {
+  font: 400 14px/24px "ArialMT", sans-serif;
+  opacity: 0.9;
+  color: #747474;
+  margin-bottom: 15px;
+}
+
+.services__descr {
+  padding-bottom: 10px;
+}
+
+.services__subtitle {
+  font: 400 16px/27px "GnuolaneFree", sans-serif;
+  color: #212121;
+  margin-bottom: 5px;
 }
 
 @media screen and (min-width: 480px) {
