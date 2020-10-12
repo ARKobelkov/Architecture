@@ -1,11 +1,18 @@
 .services {
   &__info {
-    padding-left: 310px;
     padding-top: 35px;
     padding-bottom: 35px;
   }
   &__content-wrapper {
-    padding-left: 50px;
+    @media screen and (min-width: 990px) {
+      padding-left: 310px;
+      float: left;
+    }
+  }
+  &__content {
+    @media screen and (min-width: 990px) {
+      padding-left: 50px;
+    }
   }
   &__title {
     font: 400 30px / 27px 'GnuolaneFree', sans-serif;

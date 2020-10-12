@@ -12,6 +12,11 @@
   }
   &__wrapper {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (min-width: 600px) {
+      flex-wrap: nowrap;
+    }
   }
   &__img-wrapper {
     border: 5px solid #dfdcdc;
@@ -27,7 +32,12 @@
   }
   &__text-wrapper {
     margin-left: 20px;
-    padding-right: 30px;
+    padding-right: 20px;
+    margin-top: 20px;
+    @media screen and (min-width: 600px) {
+      margin-top: 0;
+      padding-right: 30px;
+    }
   }
   &__text {
     opacity: 0.9;

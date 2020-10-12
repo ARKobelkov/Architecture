@@ -373,7 +373,7 @@ body.visible-menu .header__nav {
 
 .project {
   padding: 10px;
-  width: 50%;
+  width: 100%;
 }
 
 .project__link {
@@ -633,6 +633,14 @@ body.visible-menu .header__nav {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .contacts__img-wrapper {
@@ -657,7 +665,8 @@ body.visible-menu .header__nav {
 
 .contacts__text-wrapper {
   margin-left: 20px;
-  padding-right: 30px;
+  padding-right: 20px;
+  margin-top: 20px;
 }
 
 .contacts__text {
@@ -1441,13 +1450,8 @@ body.visible-menu .header__nav {
 }
 
 .services__info {
-  padding-left: 310px;
   padding-top: 35px;
   padding-bottom: 35px;
-}
-
-.services__content-wrapper {
-  padding-left: 50px;
 }
 
 .services__title {
@@ -1473,9 +1477,74 @@ body.visible-menu .header__nav {
   margin-bottom: 5px;
 }
 
+.services-list {
+  width: 100%;
+  min-height: 1px;
+}
+
+.services-list__title-wrapper {
+  margin-bottom: 30px;
+}
+
+.services-list__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border: 3px solid #dfdcdc;
+  text-align: center;
+}
+
+.services-list__service {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -moz-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.services-list__service-link {
+  padding: 35px 30px;
+  display: block;
+  text-decoration: none;
+  border: 3px solid #dfdcdc;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.services-list__service-link:hover {
+  border: 3px solid #747474;
+}
+
+.services-list__service-title {
+  font: 400 30px/27px "GnuolaneFree", sans-serif;
+  color: #212121;
+  margin-bottom: 20px;
+}
+
+.services-list__service-list {
+  margin-bottom: 0;
+}
+
+.services-list__service-item {
+  font: 400 16px/25px "GnuolaneFree", sans-serif;
+  color: #212121;
+}
+
 @media screen and (min-width: 480px) {
   .cover {
     min-width: 320px;
+  }
+
+  .project {
+    width: 50%;
   }
 
   .header__title {
@@ -1525,6 +1594,17 @@ body.visible-menu .header__nav {
 @media screen and (min-width: 600px) {
   .cover {
     max-width: 570px;
+  }
+
+  .contacts__wrapper {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .contacts__text-wrapper {
+    margin-top: 0;
+    padding-right: 30px;
   }
 
   .left-workers {
@@ -1748,6 +1828,33 @@ body.visible-menu .header__nav {
     margin-left: -222px;
     width: 222px;
     padding-left: 0;
+  }
+
+  .services__content-wrapper {
+    padding-left: 310px;
+    float: left;
+  }
+
+  .services__content {
+    padding-left: 50px;
+  }
+
+  .services-list {
+    float: left;
+    margin-left: -100%;
+    width: 310px;
+  }
+
+  .services-list__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-text-align-last: left;
+    text-align-last: left;
   }
 }
 /*# sourceMappingURL=style.css.map */
