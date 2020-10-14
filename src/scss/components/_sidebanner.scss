@@ -6,7 +6,8 @@
     display: block;
     padding: 23px 0 18px 15px;
     text-decoration: none;
-    &:hover .sidebanner__btn {
+    &:hover .sidebanner__btn,
+    &:active .sidebanner__btn {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
     }
   }

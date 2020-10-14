@@ -1,13 +1,17 @@
 .news {
   &__wrapper {
-    padding: 35px 0;
+    padding-top: 35px;
   }
   &__content {
-    padding-right: 310px;
-    float: left;
+    @media screen and (min-width: 990px) {
+      padding-right: 310px;
+      float: left;
+    }
   }
   &__content-wrapper {
-    padding-right: 35px;
+    @media screen and (min-width: 990px) {
+      padding-right: 35px;
+    }
   }
   &__title {
     font: 400 30px / 27px 'GnuolaneFree', sans-serif;
@@ -27,8 +31,15 @@
       color: $titlecolor;
       text-decoration: none;
       transition: all 0.3s ease;
-      &:hover {
+      &:hover,
+      &:active {
         text-decoration: underline;
+      }
+      &_open {
+        &:hover,
+        :active {
+        text-decoration: none;
+        }
       }
     }
     &-descr {
@@ -39,23 +50,46 @@
       margin-bottom: 5px;
     }
     &-img-wrapper {
-      float: left;
-      margin-right: 20px;
-      margin-bottom: 5px;
+      margin-bottom: 15px;
       margin-top: 5px;
+      @media screen and (min-width: 768px) {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 5px;
+        &_open {
+          float: none;
+          margin-bottom: 13px;
+        }
+      }
     }
     &-img-link {
       display: block;
       border: 5px solid #dfdcdc;
       padding: 10px;
       transition: all 0.3s ease;
-      &:hover {
+      &:hover,
+      &:active {
         border: 5px solid #747474;
       }
+      &_open {
+        &:hover,
+        &:active {
+        border: 5px solid #dfdcdc;
+        }
+      }
+    }
+    &-img {
+      max-width: none;
+      width: 100%;
     }
     &-text {
-      padding-right: 30px;
       margin-bottom: 10px;
+      @media screen and (min-width: 990px) {
+        padding-right: 30px;
+      }
+      &_open {
+        margin-bottom: 23px;
+      }
     }
     &-links {
       display: flex;
@@ -74,13 +108,15 @@
     }
   }
   &__pagination {
-    margin-bottom: 15px;
+    margin-bottom: 35px;
   }
   &__aside {
-    width: 310px;
-    float: left;
     position: relative;
-    margin-left: -310px;
+    @media screen and (min-width: 990px) {
+      width: 310px;
+      float: left;
+      margin-left: -310px;
+    }
     &-title-wrapper {
       margin-bottom: 25px;
     }
@@ -91,5 +127,14 @@
     &-nav {
       margin-bottom: 60px;
     }
+  }
+  &__comments {
+    padding-top: 25px;
+    &-answer {
+      padding-left: 20px;
+    }
+  }
+  &__form {
+    padding-bottom: 45px;
   }
 }

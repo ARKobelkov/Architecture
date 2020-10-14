@@ -14,13 +14,17 @@
     text-decoration: none;
     transition: all 0.3s ease;
     &:hover .project__title,
-    &:hover .project__img-wrapper {
+    &:hover .project__img-wrapper,
+    &:active .project__title,
+    &:active .project__img-wrapper {
       border: 5px solid #747474;
     }
-    &:hover .project__title {
+    &:hover .project__title,
+    &:active .project__title {
       border-bottom: 2.5px solid #747474;
     }
-    &:hover .project__img-wrapper {
+    &:hover .project__img-wrapper,
+    &:active .project__img-wrapper {
       border-top: 2.5px solid #747474;
     }
   }

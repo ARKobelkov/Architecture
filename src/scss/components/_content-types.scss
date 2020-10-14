@@ -20,7 +20,8 @@
     display: block;
     border-top: 1px solid #dcdcdc;
     padding: 5px 0;
-    &:hover {
+    &:hover,
+    &:active {
       text-decoration: underline;
     }
   }

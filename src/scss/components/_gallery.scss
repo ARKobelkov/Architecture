@@ -34,7 +34,8 @@
     border: 5px solid #dfdcdc;
     padding: 10px;
     transition: all 0.3s ease;
-    &:hover {
+    &:hover,
+    &:active {
       border: 5px solid #747474;
     }
   }
@@ -62,7 +63,8 @@
     color: $titlecolor;
     text-decoration: none;
     transition: all 0.3s ease;
-    &:hover {
+    &:hover,
+    &:active {
       text-decoration: underline;
     }
   }

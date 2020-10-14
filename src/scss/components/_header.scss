@@ -232,7 +232,8 @@
     padding: 20px 0px;
     margin: 0;
   }
-  &__nav-item:hover > &__submenu-wrapper {
+  &__nav-item:hover > &__submenu-wrapper,
+  &__nav-item:active > &__submenu-wrapper {
     transform: scaleY(1);
     position: relative;
     left: 0;
@@ -251,7 +252,8 @@
       color: $titlecolor;
     }
   }
-  &__submenu-item:hover > &__sub-submenu-wrapper {
+  &__submenu-item:hover > &__sub-submenu-wrapper,
+  &__submenu-item:active > &__sub-submenu-wrapper {
     transform: scaleX(1);
   }
   &__submenu-link {

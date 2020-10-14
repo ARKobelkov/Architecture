@@ -66,11 +66,14 @@
   &__mail-link {
     color: #a2a2a2;
   }
-  &__mail-link:hover {
+  &__mail-link:hover,
+  &__mail-link:active {
     color: $titlecolor;
   }
   &__phone-link:hover,
-  &__fax-link:hover {
+  &__fax-link:hover,
+  &__phone-link:active,
+  &__fax-link:active {
     text-decoration: underline;
   }
 }
