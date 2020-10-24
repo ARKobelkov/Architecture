@@ -7,9 +7,19 @@
     border-bottom: 5px solid #dfdcdc;
     margin-bottom: 10px;
   }
-  &__list {
+  &__list,
+  &__sublist {
     margin-bottom: 0;
   }
+  &__sublist {
+    display: none;
+  }
+  // &__item {
+  //   &:active > .content-types__sublist,
+  //   &:hover > .content-types__sublist {
+  //     display: block;
+  //   }
+  // }
   &__link,
   &__sublink,
   &__sub-sublink {

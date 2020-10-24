@@ -46,6 +46,7 @@
                   <div class="header__pull-text">menu</div>
                 </div>
               </div>
+              <div class="header__bg-mobile" id="bg-mobile"></div>
               <nav class="header__nav" id="menu">
                 <div class="header__close-btn" id="close-menu"></div>
                 <ul class="header__nav-list">
@@ -152,7 +153,9 @@
                 <!-- (project) -->
                 <div class="project">
                   <a href="#" class="project__link">
-                    <h4 class="project__title">Residential</h4>
+                    <div class="project__title-wrapper">
+                      <h4 class="project__title">Residential</h4>
+                    </div>
                     <div class="project__img-wrapper">
                       <img src="images/content/projects/project1.jpg" alt="project1" class="project__img">
                     </div>
@@ -162,7 +165,9 @@
                 <!-- (project) -->
                 <div class="project">
                   <a href="#" class="project__link">
-                    <h4 class="project__title">Commercial</h4>
+                    <div class="project__title-wrapper">
+                      <h4 class="project__title">Commercial</h4>
+                    </div>
                     <div class="project__img-wrapper">
                       <img src="images/content/projects/project2.jpg" alt="project1" class="project__img">
                     </div>
@@ -172,7 +177,9 @@
                 <!-- (project) -->
                 <div class="project">
                   <a href="#" class="project__link">
-                    <h4 class="project__title">Design Sketches</h4>
+                    <div class="project__title-wrapper">
+                      <h4 class="project__title">Design Sketches</h4>
+                    </div>
                     <div class="project__img-wrapper">
                       <img src="images/content/projects/project3.jpg" alt="project1" class="project__img">
                     </div>
@@ -182,7 +189,9 @@
                 <!-- (project) -->
                 <div class="project">
                   <a href="#" class="project__link">
-                    <h4 class="project__title">Concepts</h4>
+                    <div class="project__title-wrapper">
+                      <h4 class="project__title">Concepts</h4>
+                    </div>
                     <div class="project__img-wrapper">
                       <img src="images/content/projects/project4.jpg" alt="project1" class="project__img">
                     </div>
@@ -201,10 +210,10 @@
                 <section class="info__content">
                   <article class="info__about">
                     <div class="info__about-content">
-                      <h3 class="info__about-title">A Few Words About Us</h3>
-                      <p class="info__about-descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
-                      <p class="info__about-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur. Donec accumsan malesuada.</p>
-                      <p class="info__about-text"> ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem.  Donec accumsan malesuada orci. Donec sit amet eros. Sed laoreet aliquam.</p>
+                      <h3>A Few Words About Us</h3>
+                      <p><span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</span></p>
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur. Donec accumsan malesuada.</p>
+                      <p> ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem.  Donec accumsan malesuada orci. Donec sit amet eros. Sed laoreet aliquam.</p>
                     </div>
                     <a href="#" class="info__more-about-link">More About Us</a>
                   </article>
@@ -235,7 +244,9 @@
                       </a>
                     </div>
                   </div>
-                  <a href="#" class="info__more-news-link">More news</a>
+                  <div class="info__news-link-wrapper">
+                    <a href="#" class="info__news-link">More news</a>
+                  </div>
                 </article>
                 <!-- End (info-news) -->
                 <!-- (info-sidebar) -->
@@ -400,16 +411,12 @@
                           </li>
                           <li class="footer__social-item">
                             <a href="#" class="footer__social-facebook">
-                              <div class="footer__icon">
-                                f
-                              </div>
+                              <img src="images/icon-facebook.png" alt="twitter" class="footer__icon">
                             </a>
                           </li>
                           <li class="footer__social-item">
                             <a href="#" class="footer__social-google">
-                              <div class="footer__icon footer__icon_line-height">
-                                g+
-                              </div>  
+                              <img src="images/icon-google.png" alt="twitter" class="footer__icon">
                             </a>
                           </li>
                         </ul>
@@ -425,7 +432,6 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/svg4everybody.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/script.js"></script>
   </body>

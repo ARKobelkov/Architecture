@@ -20,6 +20,9 @@
   }
   &__item {
     margin-bottom: 35px;
+    @media screen and (min-width: 990px) {
+      padding-right: 30px;
+    }
     &-header {
       margin-bottom: 10px;
     }
@@ -52,7 +55,7 @@
     &-img-wrapper {
       margin-bottom: 15px;
       margin-top: 5px;
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 990px) {
         float: left;
         margin-right: 20px;
         margin-bottom: 5px;
@@ -67,11 +70,23 @@
       border: 5px solid #dfdcdc;
       padding: 10px;
       transition: all 0.3s ease;
+      @media screen and (min-width: 768px) {
+        max-width: 278px;
+      }
+      @media screen and (min-width: 600px) {
+        max-width: 250px;
+      }
       &:hover,
       &:active {
         border: 5px solid #747474;
       }
       &_open {
+        @media screen and (min-width: 600px) {
+          max-width: none;
+        }
+        @media screen and (min-width: 768px) {
+          max-width: none;
+        }
         &:hover,
         &:active {
         border: 5px solid #dfdcdc;
@@ -82,19 +97,11 @@
       max-width: none;
       width: 100%;
     }
-    &-text {
-      margin-bottom: 10px;
-      @media screen and (min-width: 990px) {
-        padding-right: 30px;
-      }
-      &_open {
-        margin-bottom: 23px;
-      }
-    }
     &-links {
       display: flex;
       position: relative;
       margin: 0 -12px;
+      flex-wrap: wrap;
     }
     &-link-wrapper {
       padding: 0 12px;

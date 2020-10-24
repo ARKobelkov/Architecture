@@ -8,11 +8,16 @@
   &__content {
     @media screen and (min-width: 990px) {
       float: left;
-      padding: 0 222px;
+      position: relative;
+      z-index: 1;
+      margin-left: 222px;
+      margin-right: 222px;
+      width: 496px;
+      min-height: 1px;
     }
   }
   &__info-wrapper {
-    margin-bottom: 50px;
+    text-align: center;
     @media screen and (min-width: 990px) {
       padding: 0 70px;
     }

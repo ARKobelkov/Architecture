@@ -24,6 +24,10 @@ a:active {
 }
 p {
   margin: 0 0 20px;
+  span {
+    font: 400 16px / 27px 'GnuolaneFree', sans-serif;
+    color: $titlecolor;
+  }
 }
 img {
   display: block;
@@ -53,6 +57,8 @@ h2 {
 }
 h3 {
   font-size: 30px;
+  line-height: 27px;
+  margin-bottom: 30px;
 }
 h4 {
   font-size: 27px;
@@ -71,31 +77,34 @@ ol {
 }
 ul.marker li,
 ol.marker li {
-  padding-left: 25px;
   position: relative;
+  font: 400 16px / 27px 'GnuolaneFree', sans-serif;
+  color: $titlecolor;
+}
+ul.marker li {
+  padding-left: 25px;
+  display: inline-block;
 }
 ul.marker li:before {
   content: '';
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: $secondcolor;
+  background: $titlecolor;
   display: block;
   position: absolute;
   left: 0;
-  top: 8px;
+  top: 10px;
 }
+
 ol.marker li {
   counter-increment: step-counter;
 }
 ol.marker li:before {
   content: counter(step-counter) '.';
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 14px;
-  line-height: 24px;
-  color: $secondcolor;
+  font: 400 16px / 27px 'GnuolaneFree', sans-serif;
+  color: $titlecolor;
+  margin-right: 4px;
 }
 q {
   display: block;
@@ -169,13 +178,19 @@ input::-ms-clear {
 .slick-dots {
   margin: 0;
   position: absolute;
-  right: 30px;
-  bottom: 30px;
-  max-width: 75px;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: -15px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
+  @media screen and (min-width: 768px) {
+    right: 30px;
+    bottom: 30px;
+    transform: translateX(0);
+    max-width: 75px;
+  }
 }
 .slick-dots li  {
   flex: 0 0 auto;

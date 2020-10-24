@@ -7,73 +7,53 @@
     padding-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     position: relative;
     margin: 0 -17px;
-    @media screen and (min-width: 768px) {
-      flex-wrap: nowrap;
+    @media screen and (min-width: 990px) {
+      padding-right: 270px;
+      flex-direction: row;
     }
   }
   &__home {
-    width: 50%;
-    @media screen and (min-width: 768px) {
-      width: 16%;
-    }
-    @media screen and (min-width: 480px) {
-      width: 22%;
+    @media screen and (min-width: 990px) {
+      width: 23%;
     }
   }
   &__inspirations {
-    width: 50%;
-    @media screen and (min-width: 768px) {
-      width: 17%;
-    }
-    @media screen and (min-width: 480px) {
-      width: 25%;
+    @media screen and (min-width: 990px) {
+      width: 23%;
     }
   }
   &__tips {
-    width: 50%;
-    @media screen and (min-width: 768px) {
-      width: 16%;
-    }
-    @media screen and (min-width: 480px) {
-      width: 25%;
+    @media screen and (min-width: 990px) {
+      width: 23%;
     }
   }
   &__advice {
-    width: 50%;
     @media screen and (min-width: 990px) {
-      width: 16%;
-    }
-    @media screen and (min-width: 768px) {
-      width: 18%;
-    }
-    @media screen and (min-width: 480px) {
-      width: 28%;
+      width: 23%;
     }
   }
   &__links {
     width: 100%;
     padding: 0 17px;
-    position: relative;
+    margin-top: 10px;
     @media screen and (min-width: 990px) {
-      width: 35%;
-    }
-    @media screen and (min-width: 768px) {
-      width: 33%;
+      width: 270px;
+      position: absolute;
+      right: 0;
+      margin-top: 0;
     }
   }
   &__links-wrapper {
     position: relative;
-    @media screen and (min-width: 990px) {
-      position: absolute;
-      right: 50px;
-      top: 0;
-    }
+    display: flex;
+    flex-direction: column;
   }
   &__privacy-wrapper {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 2px;
     margin-bottom: 6px;
     span {
@@ -81,9 +61,6 @@
       font: 400 16px / 25px 'GnuolaneFree', sans-serif;
       color: #323232;
       margin: 0 3px;
-    }
-    @media screen and (min-width: 768px) {
-      justify-content: flex-start;
     }
   }
   &__architecture,
@@ -95,6 +72,9 @@
     margin: 0 3px;
     transition: all 0.3s ease;
   }
+  &__policy {
+    flex: 0 0 auto;
+  }
   &__policy:hover,
   &__policy:active {
     text-decoration: underline;
@@ -102,10 +82,7 @@
   &__social-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    @media screen and (min-width: 768px) {
-      justify-content: flex-start;
-    }
+    
   }
   &__social-item {
     padding: 2px;
@@ -141,10 +118,5 @@
     right: 0;
     bottom: 0;
     margin: auto;
-    font: 400 27px / 1.4 'Francois One', sans-serif;
-    color: #ffffff;
-    &_line-height {
-      line-height: 1.1;
-    }
   }
 }

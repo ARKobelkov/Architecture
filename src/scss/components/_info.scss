@@ -5,6 +5,8 @@
   &__content {
     padding-bottom: 20px;
     position: relative;
+    min-height: 1px;
+    width: 100%;
     @media screen and (min-width: 990px) {
       float: left;
       padding-right: 230px;
@@ -14,31 +16,14 @@
   }
   &__about {
     padding: 10px 0;
+    text-align: center;
     @media screen and (min-width: 990px) {
       padding: 10px 40px 10px 50px;
+      text-align: left;
     }
   }
   &__about-content {
     margin-bottom: 27px;
-  }
-  &__about-title {
-    font: 400 30px / 27px 'GnuolaneFree', sans-serif;
-    font-family: GnuolaneFree;
-    color: $titlecolor;
-    margin-bottom: 30px;
-    text-align: center;
-    @media screen and (min-width: 990px) {
-      text-align: left;
-    }
-  }
-  &__about-descr {
-    font: 400 16px / 27px 'GnuolaneFree', sans-serif;
-    color: $titlecolor;
-  }
-  &__about-text {
-    opacity: 0.9;
-    font: 400 14px / 24px 'ArialMT', sans-serif;
-    color: $fontcolor;
   }
   &__more-about-link {
     font: 400 16px / 27px 'GnuolaneFree', sans-serif;
@@ -54,18 +39,13 @@
     }
   }
   &__news {
-    width: 100%;
     padding: 10px 0 20px 0;
     min-height: 1px;
     @media screen and (min-width: 990px) {
       margin-left: -100%;
       width: 310px;
       padding: 10px 0;
-    }
-    @media screen and (min-width: 768px) {
       float: left;
-      margin-left: 0;
-      padding: 10px 280px 10px 0;
     }
   }
   &__news-title-wrapper {
@@ -75,8 +55,18 @@
     border: 3px solid #dfdcdc;
     margin-bottom: 20px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
     @media screen and (min-width: 990px) {
       text-align: left;
+    }
+  }
+  &__new {
+    @media screen and (min-width: 990px) {
+      width: 100%;
+    }
+    @media screen and (min-width: 480px) {
+      width: 50%;
     }
   }
   &__new-link {
@@ -102,7 +92,13 @@
     margin: 0;
     opacity: 0.9;
   }
-  &__more-news-link {
+  &__news-link-wrapper {
+    text-align: center;
+    @media screen and (min-width: 990px) {
+      text-align: left;
+    }
+  }
+  &__news-link {
     font: 400 16px / 27px 'GnuolaneFree', sans-serif;
     font-family: GnuolaneFree;
     text-decoration: underline;
@@ -110,19 +106,28 @@
     transition: all 0.3s ease;
     padding-left: 30px;
     padding-right: 30px;
-    align-self: start;
   }
   &__sidebar {
-    width: 230px;
     margin-top: 10px;
     min-height: 1px;
-    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 990px) {
       float: left;
       margin-left: -230px;
       margin-top: 0;
+      width: 230px;
     }
   }
   &__sidebanner {
+    order: 1;
+    width: 230px;
     margin-bottom: 40px;
+    @media screen and (min-width: 990px) {
+      order: 0;
+    }
+  }
+  &__sidenav {
+    margin-bottom: 10px;
   }
 }

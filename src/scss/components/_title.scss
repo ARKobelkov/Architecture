@@ -6,7 +6,6 @@
     display: block;
     height: 5px;
     background-color: #dfdcdc;
-    width: 100%;
     flex: 1 1 auto;
   }
   &__text {
@@ -16,7 +15,8 @@
     letter-spacing: 1px;
     color: $titlecolor;
     margin: 0;
-    flex: 1 0 auto;
+    flex: 0 1 auto;
     padding: 0 15px;
+    max-width: 250px;
   }
 }

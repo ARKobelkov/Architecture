@@ -12,12 +12,16 @@
     }
   }
   &__title {
+    position: relative;
+    z-index: 1;
     font: 400 70px / 60px 'GnuolaneFree', sans-serif;
     text-transform: uppercase;
     color: $titlecolor;
     margin: 0;
   }
   &__subtitle {
+    position: relative;
+    z-index: 1;
     font: 400 20px / 22px 'GnuolaneFree', sans-serif;
     text-transform: uppercase;
     color: $titlecolor;
@@ -40,5 +44,9 @@
     position: absolute;
     bottom: -36px;
     right: -78px;
+  }
+  &__img {
+    max-width: none;
+    width: 100%;
   }
 }

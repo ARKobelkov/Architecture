@@ -1,11 +1,11 @@
 .project {
-  padding: 10px;
-  width: 100%;
-  @media screen and (min-width: 990px) {
-    width: 25%;
+  padding: 5px;
+  width: 50%;
+  @media screen and (min-width: 768px) {
+    padding: 10px;
   }
-  @media screen and (min-width: 480px) {
-    width: 50%;
+  @media screen and (min-width: 600px) {
+    width: 25%;
   }
   &__link {
     display: flex;
@@ -13,14 +13,14 @@
     height: 100%;
     text-decoration: none;
     transition: all 0.3s ease;
-    &:hover .project__title,
+    &:hover .project__title-wrapper,
     &:hover .project__img-wrapper,
-    &:active .project__title,
+    &:active .project__title-wrapper,
     &:active .project__img-wrapper {
       border: 5px solid #747474;
     }
-    &:hover .project__title,
-    &:active .project__title {
+    &:hover .project__title-wrapper,
+    &:active .project__title-wrapper {
       border-bottom: 2.5px solid #747474;
     }
     &:hover .project__img-wrapper,
@@ -28,17 +28,30 @@
       border-top: 2.5px solid #747474;
     }
   }
-  &__title {
+  &__title-wrapper {
+    display: flex;
     flex: 1 1 auto;
-    text-align: center;
-    font: 400 30px / 27px 'GnuolaneFree', sans-serif;
-    text-transform: uppercase;
-    color: $titlecolor;
-    margin: 0;
-    padding: 21px 0;
     border: 5px solid #dfdcdc;
     transition: all 0.3s ease;
     border-bottom: 2.5px solid #dfdcdc;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title {
+    text-align: center;
+    font: 400 15px / 12px 'GnuolaneFree', sans-serif;
+    text-transform: uppercase;
+    color: $titlecolor;
+    margin: 0;
+    padding: 21px 15px;
+    @media screen and (min-width: 990px) {
+      font-size: 30px;
+      line-height: 27px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 21px;
+      line-height: 20px;
+    }
   }
   &__img-wrapper {
     border: 5px solid #dfdcdc;
