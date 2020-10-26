@@ -1,8 +1,11 @@
 .header {
   background: #000;
   &__container {
-    padding: 53px 0 25px 0;
+    padding: 53px 0 10px 0;
     border-top: 5px solid #212121; 
+    @media screen and (min-width: 768px) {
+      padding: 53px 0 25px 0;
+    }
   }
   &__title-wrapper {
     display: flex;

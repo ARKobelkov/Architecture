@@ -3,6 +3,8 @@
     padding-top: 35px;
   }
   &__content {
+    width: 100%;
+    min-height: 1px;
     @media screen and (min-width: 990px) {
       padding-right: 310px;
       float: left;
@@ -55,7 +57,7 @@
     &-img-wrapper {
       margin-bottom: 15px;
       margin-top: 5px;
-      @media screen and (min-width: 990px) {
+      @media screen and (min-width: 600px) {
         float: left;
         margin-right: 20px;
         margin-bottom: 5px;

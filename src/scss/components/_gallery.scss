@@ -3,7 +3,10 @@
     padding: 35px 0;
   }
   &__content {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
+    @media screen and (min-width: 990px) {
+      padding-bottom: 40px;
+    }
   }
   &__title-wrapper {
     margin-bottom: 35px;
@@ -78,7 +81,10 @@
     }
   }
   &__link-wrapper {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 990px) {
+      margin-bottom: 10px;
+    }
   }
   &__link {
     font: 400 16px / 16px 'GnuolaneFree', sans-serif;

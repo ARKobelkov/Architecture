@@ -32,7 +32,37 @@ $(function () {
     }
   }); // Side-navs
 
-  $('.content-types__item').on('click', function () {
-    $(this).find('.content-types__sublist').slideToggle();
+  $('.content-types__list a').on('click', function (event) {
+    var parentContainer = $(this).parent();
+    var nav = parentContainer.children('ul');
+
+    if (nav.length) {
+      event.preventDefault();
+      var siblingsContainers = parentContainer.siblings('.active');
+      var activeNav = siblingsContainers.children('ul');
+
+      if (parentContainer.hasClass('active')) {
+        nav.slideUp(200, function () {
+          parentContainer.removeClass('active');
+        });
+      } else {
+        activeNav.slideUp(200);
+        siblingsContainers.removeClass('active');
+        nav.slideDown(200, function () {
+          parentContainer.addClass('active');
+        });
+      }
+    }
+  }); // Main-nav
+
+  $('.header__nav-list a').on('click', function (event) {
+    var parentContainer = $(this).parent();
+    var nav = parentContainer.children('div');
+
+    if ($(window).width() < 990) {
+      if (nav.length) {
+        event.preventDefault();
+      }
+    }
   });
 });

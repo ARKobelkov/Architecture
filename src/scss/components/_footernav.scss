@@ -51,6 +51,7 @@
     }
   }
   &__link {
+    display: inline-block;
     font: 400 14px / 17px 'ArialMT', sans-serif;
     text-decoration: none;
     color: $secondcolor;

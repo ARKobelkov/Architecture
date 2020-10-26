@@ -59,6 +59,7 @@
   &__fax-link,
   &__mail-text,
   &__mail-link {
+    cursor: default;
     font: 400 16px / 27px 'GnuolaneFree', sans-serif;
     color: $titlecolor;
     text-decoration: none;
@@ -70,6 +71,7 @@
   &__mail-text,
   &__mail-link {
     color: #a2a2a2;
+    cursor: pointer;
   }
   &__mail-link:hover,
   &__mail-link:active {

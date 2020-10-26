@@ -197,14 +197,6 @@ input::-ms-clear {
 }
 .slick-dots {
   margin: 0;
-  position: absolute;
-  right: 50%;
-  -webkit-transform: translateX(50%);
-  -moz-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  -o-transform: translateX(50%);
-  transform: translateX(50%);
-  bottom: -15px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -218,11 +210,11 @@ input::-ms-clear {
   -moz-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -moz-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
 }
 .slick-dots li {
   -webkit-box-flex: 0;
@@ -485,7 +477,7 @@ body.visible-menu .header__nav {
   margin-bottom: 10px
 }
 .sidenav__link {
-  display: block;
+  display: inline-block;
   font: 400 16px/25px GnuolaneFree,sans-serif;
   opacity: .5;
   color: #212121;
@@ -553,6 +545,7 @@ body.visible-menu .header__nav {
   display: none
 }
 .footernav__link {
+  display: inline-block;
   font: 400 14px/17px ArialMT,sans-serif;
   text-decoration: none;
   color: #818181;
@@ -657,6 +650,7 @@ body.visible-menu .header__nav {
 .contacts__mail-text,
 .contacts__phone-link,
 .contacts__phone-text {
+  cursor: default;
   font: 400 16px/27px GnuolaneFree,sans-serif;
   color: #212121;
   text-decoration: none;
@@ -670,7 +664,8 @@ body.visible-menu .header__nav {
 }
 .contacts__mail-link,
 .contacts__mail-text {
-  color: #a2a2a2
+  color: #a2a2a2;
+  cursor: pointer
 }
 .contacts__mail-link:active,
 .contacts__mail-link:hover {
@@ -936,7 +931,7 @@ body.visible-menu .header__nav {
   background: #000
 }
 .header__container {
-  padding: 53px 0 25px 0;
+  padding: 53px 0 10px 0;
   border-top: 5px solid #212121
 }
 .header__title-wrapper {
@@ -1338,7 +1333,6 @@ body.visible-menu .header__nav {
 }
 .info__content {
   padding-bottom: 20px;
-  position: relative;
   min-height: 1px;
   width: 100%
 }
@@ -1350,6 +1344,7 @@ body.visible-menu .header__nav {
   margin-bottom: 27px
 }
 .info__more-about-link {
+  display: inline-block;
   font: 400 16px/27px GnuolaneFree,sans-serif;
   font-family: GnuolaneFree;
   text-decoration: underline;
@@ -1384,6 +1379,13 @@ body.visible-menu .header__nav {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap
 }
+.info__new {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex
+}
 .info__new-link {
   display: block;
   position: relative;
@@ -1414,6 +1416,7 @@ body.visible-menu .header__nav {
   text-align: center
 }
 .info__news-link {
+  display: inline-block;
   font: 400 16px/27px GnuolaneFree,sans-serif;
   font-family: GnuolaneFree;
   text-decoration: underline;
@@ -1631,6 +1634,10 @@ body.visible-menu .header__nav {
   padding-top: 35px;
   padding-bottom: 35px
 }
+.services__content-wrapper {
+  width: 100%;
+  min-height: 1px
+}
 .services-list {
   width: 100%;
   min-height: 1px
@@ -1680,6 +1687,7 @@ body.visible-menu .header__nav {
   color: #212121
 }
 .services-list__service-link {
+  display: inline-block;
   font: 400 16px/25px GnuolaneFree,sans-serif;
   color: #212121;
   text-decoration: none;
@@ -1696,7 +1704,7 @@ body.visible-menu .header__nav {
   padding: 35px 0
 }
 .gallery__content {
-  padding-bottom: 40px
+  padding-bottom: 30px
 }
 .gallery__title-wrapper {
   margin-bottom: 35px
@@ -1767,7 +1775,7 @@ body.visible-menu .header__nav {
   text-decoration: underline
 }
 .gallery__link-wrapper {
-  margin-bottom: 10px
+  margin-bottom: 20px
 }
 .gallery__link {
   font: 400 16px/16px GnuolaneFree,sans-serif;
@@ -1828,6 +1836,10 @@ body.visible-menu .header__nav {
 }
 .news__wrapper {
   padding-top: 35px
+}
+.news__content {
+  width: 100%;
+  min-height: 1px
 }
 .news__title {
   font: 400 30px/27px GnuolaneFree,sans-serif;
@@ -1946,6 +1958,10 @@ body.visible-menu .header__nav {
   .cover {
     min-width: 320px
   }
+  .project__title {
+    font-size: 20px;
+    line-height: 20px
+  }
   .worker__name {
     font-size: 24px;
     line-height: 23px
@@ -2001,6 +2017,10 @@ body.visible-menu .header__nav {
   .project {
     width: 25%
   }
+  .project__title {
+    font-size: 15px;
+    line-height: 12px
+  }
   .workers__wrapper {
     margin-left: -10px
   }
@@ -2019,6 +2039,15 @@ body.visible-menu .header__nav {
     width: -moz-calc(100% / 3);
     width: calc(100% / 3)
   }
+  .news__item-img-wrapper {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 5px
+  }
+  .news__item-img-wrapper_open {
+    float: none;
+    margin-bottom: 13px
+  }
   .news__item-img-link {
     max-width: 250px
   }
@@ -2031,14 +2060,15 @@ body.visible-menu .header__nav {
     max-width: 730px
   }
   .slick-dots {
+    position: absolute;
     right: 30px;
     bottom: 30px;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
-    max-width: 75px
+    max-width: 75px;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
   }
   .project {
     padding: 10px
@@ -2050,6 +2080,9 @@ body.visible-menu .header__nav {
   .contacts__text-wrapper {
     margin-top: 0;
     padding-right: 30px
+  }
+  .header__container {
+    padding: 53px 0 25px 0
   }
   .header__title-wrapper {
     -webkit-box-orient: horizontal;
@@ -2071,9 +2104,6 @@ body.visible-menu .header__nav {
   }
   .projects__content-wrapper {
     margin: 0 -10px
-  }
-  .services-list__service {
-    width: 50%
   }
   .gallery__first-gallery-item {
     -webkit-box-pack: justify;
@@ -2320,8 +2350,8 @@ body.visible-menu .header__nav {
     margin-left: -100%;
     width: 310px
   }
-  .services-list__service {
-    width: 100%
+  .gallery__content {
+    padding-bottom: 40px
   }
   .gallery__img-wrapper {
     margin-right: 0
@@ -2332,6 +2362,9 @@ body.visible-menu .header__nav {
   .gallery__text-wrapper_margin-left {
     margin-left: 20px
   }
+  .gallery__link-wrapper {
+    margin-bottom: 10px
+  }
   .news__content {
     padding-right: 310px;
     float: left
@@ -2341,15 +2374,6 @@ body.visible-menu .header__nav {
   }
   .news__item {
     padding-right: 30px
-  }
-  .news__item-img-wrapper {
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 5px
-  }
-  .news__item-img-wrapper_open {
-    float: none;
-    margin-bottom: 13px
   }
   .news__aside {
     width: 310px;
